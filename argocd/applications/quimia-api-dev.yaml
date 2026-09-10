@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: quimia-api-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/felipeirl/quimia-gitops.git
+    targetRevision: main
+    path: apps/quimia-api/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: quimia-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
