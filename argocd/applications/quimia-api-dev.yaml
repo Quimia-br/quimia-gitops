@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/felipeirl/quimia-gitops.git
+    repoURL: https://github.com/Quimia-br/quimia-gitops.git
     targetRevision: main
     path: apps/quimia-api/overlays/dev
   destination:
