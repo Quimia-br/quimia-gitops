@@ -12,6 +12,8 @@ spec:
       labels:
         app.kubernetes.io/name: quimia-api
     spec:
+      imagePullSecrets:
+        - name: quimia-ecr-pull
       containers:
         - name: quimia-api
           image: quimia-api
