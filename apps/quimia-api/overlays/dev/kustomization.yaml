@@ -6,5 +6,5 @@ resources:
   - namespace.yaml
 images:
   - name: quimia-api
-    newName: localhost:5000/quimia-api
-    newTag: ci-5
+    newName: 237854152841.dkr.ecr.us-east-1.amazonaws.com/quimia-api
+    newTag: v0.1.4
